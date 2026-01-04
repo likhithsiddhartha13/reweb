@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Listings | Sample Realestate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <nav class="bg-white border-b border-gray-100 sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <div class="flex-shrink-0">
+            <a
+              href="index.html"
+              class="text-2xl font-semibold tracking-tight text-gray-900"
+              >SAMPLE<span class="text-blue-600">REALESTATE</span></a
+            >
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-8">
+              <a
+                href="index.html"
+                class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium transition"
+                >Home</a
+              >
+              <a
+                href="listings.html"
+                class="text-blue-600 px-3 py-2 text-sm font-medium"
+                >Listings</a
+              >
+              <a
+                href="about.html"
+                class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium transition"
+                >About</a
+              >
+              <a
+                href="contact.html"
+                class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium transition"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="mb-12">
+          <h1 class="text-4xl font-bold text-gray-900">Available Properties</h1>
+          <p class="text-gray-500 mt-2">
+            Explore our collection of handpicked luxury homes.
+          </p>
+        </header>
+
+        <!-- Filters -->
+        <div class="flex flex-wrap gap-4 mb-12">
+          <button
+            class="bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-medium"
+          >
+            All Properties
+          </button>
+          <button
+            class="bg-white border border-gray-200 text-gray-600 px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-50 transition"
+          >
+            Residential
+          </button>
+          <button
+            class="bg-white border border-gray-200 text-gray-600 px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-50 transition"
+          >
+            Commercial
+          </button>
+          <button
+            class="bg-white border border-gray-200 text-gray-600 px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-50 transition"
+          >
+            Modernist
+          </button>
+        </div>
+
+        <!-- Listings Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Property 1 -->
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Property"
+                class="w-full h-72 object-cover group-hover:scale-105 transition duration-500"
+              />
+              <div
+                class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-xs font-bold uppercase tracking-wider"
+              >
+                For Sale
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold mb-2 group-hover:text-blue-600 transition"
+              >
+                Modernist Villa
+              </h3>
+              <p class="text-gray-500 text-sm mb-4">Beverly Hills, CA</p>
+              <div
+                class="flex justify-between items-center pt-4 border-t border-gray-50"
+              >
+                <span class="text-blue-600 font-bold text-lg">$2,450,000</span>
+                <div
+                  class="flex space-x-3 text-gray-400 text-xs uppercase font-medium"
+                >
+                  <span>3 Bed</span>
+                  <span>•</span>
+                  <span>2 Bath</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 2 -->
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1512918766671-ed6a99be0210?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Property"
+                class="w-full h-72 object-cover group-hover:scale-105 transition duration-500"
+              />
+              <div
+                class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-xs font-bold uppercase tracking-wider"
+              >
+                For Sale
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold mb-2 group-hover:text-blue-600 transition"
+              >
+                Urban Sky Loft
+              </h3>
+              <p class="text-gray-500 text-sm mb-4">New York, NY</p>
+              <div
+                class="flex justify-between items-center pt-4 border-t border-gray-50"
+              >
+                <span class="text-blue-600 font-bold text-lg">$1,890,000</span>
+                <div
+                  class="flex space-x-3 text-gray-400 text-xs uppercase font-medium"
+                >
+                  <span>2 Bed</span>
+                  <span>•</span>
+                  <span>2 Bath</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 3 -->
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Property"
+                class="w-full h-72 object-cover group-hover:scale-105 transition duration-500"
+              />
+              <div
+                class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-xs font-bold uppercase tracking-wider"
+              >
+                New
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold mb-2 group-hover:text-blue-600 transition"
+              >
+                Serene Retreat
+              </h3>
+              <p class="text-gray-500 text-sm mb-4">Aspen, CO</p>
+              <div
+                class="flex justify-between items-center pt-4 border-t border-gray-50"
+              >
+                <span class="text-blue-600 font-bold text-lg">$3,200,000</span>
+                <div
+                  class="flex space-x-3 text-gray-400 text-xs uppercase font-medium"
+                >
+                  <span>4 Bed</span>
+                  <span>•</span>
+                  <span>3 Bath</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 4 -->
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Property"
+                class="w-full h-72 object-cover group-hover:scale-105 transition duration-500"
+              />
+              <div
+                class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-xs font-bold uppercase tracking-wider"
+              >
+                For Sale
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold mb-2 group-hover:text-blue-600 transition"
+              >
+                Glass Mansion
+              </h3>
+              <p class="text-gray-500 text-sm mb-4">Malibu, CA</p>
+              <div
+                class="flex justify-between items-center pt-4 border-t border-gray-50"
+              >
+                <span class="text-blue-600 font-bold text-lg">$5,750,000</span>
+                <div
+                  class="flex space-x-3 text-gray-400 text-xs uppercase font-medium"
+                >
+                  <span>5 Bed</span>
+                  <span>•</span>
+                  <span>6 Bath</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 5 -->
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Property"
+                class="w-full h-72 object-cover group-hover:scale-105 transition duration-500"
+              />
+              <div
+                class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-xs font-bold uppercase tracking-wider"
+              >
+                Renting
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold mb-2 group-hover:text-blue-600 transition"
+              >
+                Scandinavian Cottage
+              </h3>
+              <p class="text-gray-500 text-sm mb-4">Oslo, NO</p>
+              <div
+                class="flex justify-between items-center pt-4 border-t border-gray-50"
+              >
+                <span class="text-blue-600 font-bold text-lg">$4,500/mo</span>
+                <div
+                  class="flex space-x-3 text-gray-400 text-xs uppercase font-medium"
+                >
+                  <span>2 Bed</span>
+                  <span>•</span>
+                  <span>1 Bath</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 6 -->
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Property"
+                class="w-full h-72 object-cover group-hover:scale-105 transition duration-500"
+              />
+              <div
+                class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-xs font-bold uppercase tracking-wider"
+              >
+                For Sale
+              </div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold mb-2 group-hover:text-blue-600 transition"
+              >
+                Hillside Manor
+              </h3>
+              <p class="text-gray-500 text-sm mb-4">Portland, OR</p>
+              <div
+                class="flex justify-between items-center pt-4 border-t border-gray-50"
+              >
+                <span class="text-blue-600 font-bold text-lg">$1,250,000</span>
+                <div
+                  class="flex space-x-3 text-gray-400 text-xs uppercase font-medium"
+                >
+                  <span>3 Bed</span>
+                  <span>•</span>
+                  <span>3 Bath</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-100 py-12 mt-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-2xl font-semibold tracking-tight text-gray-900 mb-4">
+          SAMPLE<span class="text-blue-600">REALESTATE</span>
+        </p>
+        <p class="text-gray-500 text-sm">
+          &copy; 2026 Sample Realestate. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

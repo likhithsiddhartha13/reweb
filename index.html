@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Realestate | Premium Real Estate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <nav class="bg-white border-b border-gray-100 sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <div class="flex-shrink-0">
+            <a
+              href="index.html"
+              class="text-2xl font-semibold tracking-tight text-gray-900"
+              >SAMPLE<span class="text-blue-600">REALESTATE</span></a
+            >
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-8">
+              <a
+                href="index.html"
+                class="text-blue-600 px-3 py-2 text-sm font-medium"
+                >Home</a
+              >
+              <a
+                href="listings.html"
+                class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium transition"
+                >Listings</a
+              >
+              <a
+                href="about.html"
+                class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium transition"
+                >About</a
+              >
+              <a
+                href="contact.html"
+                class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium transition"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="relative bg-white min-h-[calc(100vh-64px)] flex items-center overflow-hidden"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+            <div class="py-12 lg:py-0">
+              <h1
+                class="text-5xl lg:text-7xl font-bold tracking-tight text-gray-900 mb-8 leading-[1.1]"
+              >
+                Find your dream home in
+                <span class="text-blue-600">perfect</span> locations.
+              </h1>
+              <p class="text-xl text-gray-600 mb-10 max-w-lg leading-relaxed">
+                We provide a curated selection of premium properties tailored to
+                your lifestyle. Minimalism meets luxury in every square foot.
+              </p>
+              <div
+                class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+              >
+                <a
+                  href="listings.html"
+                  class="bg-blue-600 text-white px-10 py-4 rounded-xl font-semibold hover:bg-blue-700 transition shadow-xl shadow-blue-200 text-center"
+                  >View Listings</a
+                >
+                <a
+                  href="contact.html"
+                  class="border border-gray-300 text-gray-700 px-10 py-4 rounded-xl font-semibold hover:bg-gray-50 transition text-center"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+            <div class="relative lg:h-[600px] hidden lg:block">
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=90"
+                alt="Modern House"
+                class="rounded-[2.5rem] shadow-2xl object-cover w-full h-full transform hover:scale-[1.02] transition duration-700"
+              />
+              <div
+                class="absolute -bottom-6 -left-6 bg-white p-8 rounded-3xl shadow-2xl hidden xl:block"
+              >
+                <p
+                  class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1"
+                >
+                  Featured Listing
+                </p>
+                <p class="text-3xl font-bold text-blue-600">$1,200,000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Listings Preview -->
+      <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-end mb-16">
+            <div>
+              <h2 class="text-4xl font-bold text-gray-900">
+                Featured Properties
+              </h2>
+              <p class="text-gray-500 mt-3 text-lg">
+                Handpicked selection for our clients.
+              </p>
+            </div>
+            <a
+              href="listings.html"
+              class="text-blue-600 font-semibold text-lg hover:underline flex items-center"
+              >View All <span class="ml-2">&rarr;</span></a
+            >
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-10">
+            <!-- Property 1 -->
+            <div
+              class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Modern Villa"
+                class="w-full h-72 object-cover"
+              />
+              <div class="p-8">
+                <h3 class="text-2xl font-semibold mb-2">Modernist Villa</h3>
+                <p class="text-gray-500 mb-6">Beverly Hills, CA</p>
+                <div
+                  class="flex justify-between items-center border-t border-gray-100 pt-6"
+                >
+                  <span class="text-blue-600 font-bold text-xl"
+                    >$2,450,000</span
+                  >
+                  <div class="text-gray-400 font-medium">3 Bed | 2 Bath</div>
+                </div>
+              </div>
+            </div>
+            <!-- Property 2 -->
+            <div
+              class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1512918766671-ed6a99be0210?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Urban Loft"
+                class="w-full h-72 object-cover"
+              />
+              <div class="p-8">
+                <h3 class="text-2xl font-semibold mb-2">Urban Sky Loft</h3>
+                <p class="text-gray-500 mb-6">New York, NY</p>
+                <div
+                  class="flex justify-between items-center border-t border-gray-100 pt-6"
+                >
+                  <span class="text-blue-600 font-bold text-xl"
+                    >$1,890,000</span
+                  >
+                  <div class="text-gray-400 font-medium">2 Bed | 2 Bath</div>
+                </div>
+              </div>
+            </div>
+            <!-- Property 3 -->
+            <div
+              class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Serene Retreat"
+                class="w-full h-72 object-cover"
+              />
+              <div class="p-8">
+                <h3 class="text-2xl font-semibold mb-2">Serene Retreat</h3>
+                <p class="text-gray-500 mb-6">Aspen, CO</p>
+                <div
+                  class="flex justify-between items-center border-t border-gray-100 pt-6"
+                >
+                  <span class="text-blue-600 font-bold text-xl"
+                    >$3,200,000</span
+                  >
+                  <div class="text-gray-400 font-medium">4 Bed | 3 Bath</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="bg-blue-600 rounded-[3rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row"
+          >
+            <div class="p-12 lg:p-20 text-white lg:w-1/2">
+              <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+                Ready to find your new home?
+              </h2>
+              <p class="text-blue-100 text-lg mb-10 leading-relaxed">
+                Leave us a message and our expert agents will get back to you
+                within 24 hours to help you start your journey.
+              </p>
+              <div class="space-y-6">
+                <div class="flex items-center space-x-4">
+                  <div
+                    class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-5 h-5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                      />
+                    </svg>
+                  </div>
+                  <span>+1 (555) 123-4567</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <div
+                    class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-5 h-5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                      />
+                    </svg>
+                  </div>
+                  <span>hello@luxeestate.com</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white p-12 lg:p-20 lg:w-1/2">
+              <form action="#" class="space-y-6">
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-2"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    class="w-full px-4 py-4 rounded-xl border border-gray-100 bg-gray-50 focus:bg-white focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition outline-none"
+                    placeholder="John Doe"
+                  />
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-2"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    class="w-full px-4 py-4 rounded-xl border border-gray-100 bg-gray-50 focus:bg-white focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition outline-none"
+                    placeholder="john@example.com"
+                  />
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-2"
+                    >Your Message</label
+                  >
+                  <textarea
+                    rows="4"
+                    class="w-full px-4 py-4 rounded-xl border border-gray-100 bg-gray-50 focus:bg-white focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition outline-none"
+                    placeholder="I'm interested in the Modernist Villa..."
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full bg-blue-600 text-white py-5 rounded-xl font-bold text-lg hover:bg-blue-700 transition shadow-lg shadow-blue-200"
+                >
+                  Send Inquiry
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-white border-t border-gray-100 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-3xl font-semibold tracking-tight text-gray-900 mb-6">
+          SAMPLE<span class="text-blue-600">REALESTATE</span>
+        </p>
+        <div class="flex justify-center space-x-8 mb-10">
+          <a href="#" class="text-gray-400 hover:text-blue-600 transition"
+            >Twitter</a
+          >
+          <a href="#" class="text-gray-400 hover:text-blue-600 transition"
+            >Instagram</a
+          >
+          <a href="#" class="text-gray-400 hover:text-blue-600 transition"
+            >LinkedIn</a
+          >
+        </div>
+        <p class="text-gray-400 text-sm">
+          &copy; 2026 Sample Realestate. All rights reserved. Designed for
+          excellence.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
